@@ -1,0 +1,61 @@
+.create__top form {
+    padding-top: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+input {
+    height: 30px;
+}
+
+input, textarea {
+    padding-left: 10px;
+}
+
+textarea {
+    padding-top: 10px;
+}
+button {
+    height: 50px ;
+    cursor: pointer;
+}
+
+.create__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.row {
+    border: 1px solid black;
+    padding: 30px   ;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 15px;
+}
+
+.row>div {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.actions {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.actions a {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: white;
+    text-decoration: none;
+}

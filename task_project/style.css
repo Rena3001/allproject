@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(38, 46, 23);
+    position: absolute;
+    animation: myAnimate 4000ms;
+}
+
+@keyframes myAnimate{
+    from{
+        left: 0;
+    }
+    to{
+        left: 300px;
+    }
+} */
+
+@media only screen and (max-width: 500px) {
+    div{
+        color: red;
+    }
+}

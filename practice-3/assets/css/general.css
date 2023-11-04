@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+
+.container ul li a {
+  color: var(--13274-f, #13274f);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.container ul li.active a {
+  opacity: 1;
+}
+
+.container ul li.active a::after {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: var(--color-blue);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+.container li {
+  position: relative;
+}
+.container li:hover::after {
+  transition: 0.3s;
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: var(--color-blue);
+  position: absolute;
+  width: 52px;
+  height: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+.container li:hover a {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 160px;
+}
+
+.container1 {
+  display: flex;
+  margin: 0px 70px;
+}
+
+.container1 div p {
+  color: var(--color-dark-blue);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container1 div span {
+  color: var(--color-dark);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.4%; /* 19.516px */
+}
+
+.footer {
+  color: var(--color-dark-blue);
+  background-color: #e2e7fa;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 6.1rem;
+  padding-bottom: 3.4rem;
+}
+
+.downloads {
+  padding: 61px 45px 90px 45px;
+  display: flex;
+  column-gap: 42px;
+}
+
+.download {
+  flex: 1;
+  height: 278px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  position: relative;
+}
+
+.download__block {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 147px;
+}
+.download__block a {
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 3px solid var(--color-light-blue);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-blue, #6d7593);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 141.9%; /* 25.542px */
+  width: max-content;
+  padding: 0 10px;
+}
+
+.download__block span {
+  color: #6d7593;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 141.9%; /* 19.866px */
+  display: block;
+  margin-top: 19px;
+}
+
+.download.active:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px rgba(179, 175, 175, 0.781);
+}
+
+.download.active a {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
